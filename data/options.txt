@@ -1,1 +1,14 @@
+-mesh_dm_plex_filename data/wham/mesh.msh
+-resistivity_filename_x data/wham/resistivity_data_x.dat
+-resistivity_filename_y data/wham/resistivity_data_y.dat
+-resistivity_filename_z data/wham/resistivity_data_z.dat
+-receivers_filename data/wham/receivers.dat
+-output_dir data/wham/output
+-csem_source 1750.0,1750.0,-975.0,2,1,1,0,0
+-nord 1
+#-mt_source -112,XY
+-pc_type lu 
+-pc_factor_mat_solver_type mumps
+-malloc_dump
+
 
