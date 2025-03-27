@@ -62,7 +62,7 @@ PetscErrorCode solveSystem(DM dm, Mat A, Vec b, Vec x) {
 
     if (dim == 3) {
         /* For 3D electromagnetic problems, use overlapping subdomains */
-        PetscCall(PCASMSetOverlap(pc, 1));  // One layer overlap
+        PetscCall(PCASMSetOverlap(pc, 3));  // 3 layer overlap for potentially better convergence
         PetscCall(PCASMSetType(pc, PC_ASM_BASIC));
     }
 
